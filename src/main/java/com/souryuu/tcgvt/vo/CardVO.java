@@ -7,10 +7,14 @@ public class CardVO {
 	private String cardImage; // 카드 이미지
 	
 	private String agency; // 소속
-	private String tagList; // 태그(메인/서브/서브)
-	private int presence; // 장악력
-	private int retention; // 유지력
+	private String tagList; // 태그(최대 3개)
 	
+	private int presence; // 장악력 (AP)
+	private int mentality; // 정신력 (DP)
+	private int retention; // 유지력 (HP)
+	
+	private String mainSkill; // 메인스킬
+	private String supportSkill; // 서포트스킬
 	public int getCardNo() {
 		return cardNo;
 	}
@@ -47,17 +51,35 @@ public class CardVO {
 	public void setPresence(int presence) {
 		this.presence = presence;
 	}
+	public int getMentality() {
+		return mentality;
+	}
+	public void setMentality(int mentality) {
+		this.mentality = mentality;
+	}
 	public int getRetention() {
 		return retention;
 	}
 	public void setRetention(int retention) {
 		this.retention = retention;
 	}
-	
+	public String getMainSkill() {
+		return mainSkill;
+	}
+	public void setMainSkill(String mainSkill) {
+		this.mainSkill = mainSkill;
+	}
+	public String getSupportSkill() {
+		return supportSkill;
+	}
+	public void setSupportSkill(String supportSkill) {
+		this.supportSkill = supportSkill;
+	}
 	@Override
 	public String toString() {
 		return "CardVO [cardNo=" + cardNo + ", cardName=" + cardName + ", cardImage=" + cardImage + ", agency=" + agency
-				+ ", tagList=" + tagList + ", presence=" + presence + ", retention=" + retention + "]";
+				+ ", tagList=" + tagList + ", presence=" + presence + ", mentality=" + mentality + ", retention="
+				+ retention + ", mainSkill=" + mainSkill + ", supportSkill=" + supportSkill + "]";
 	}
-	
+
 }

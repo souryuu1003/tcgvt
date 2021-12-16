@@ -1,5 +1,9 @@
 package com.souryuu.tcgvt.dao;
 
-public class UserDAO {
+import java.util.List;
 
+import com.souryuu.tcgvt.vo.UserVO;
+
+public interface UserDAO {
+	List<UserVO> selectUserList() throws Exception;
 }

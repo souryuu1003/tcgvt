@@ -10,6 +10,7 @@ public class UserVO {
 	private String userPw; // 비밀번호
 	private Date userDate; // 가입일
 	private int userRl; // 유저권한
+	private int userMc; // 매크로카운터
 	
 	private String gameGrade; // 게임등급
 	private int gameExp; // 게임경험치
@@ -93,13 +94,19 @@ public class UserVO {
 	public void setHaveCardList(List<CardVO> haveCardList) {
 		this.haveCardList = haveCardList;
 	}
+	public int getUserMc() {
+		return userMc;
+	}
+	public void setUserMc(int userMc) {
+		this.userMc = userMc;
+	}
 	
 	@Override
 	public String toString() {
 		return "UserVO [userNo=" + userNo + ", userId=" + userId + ", userPw=" + userPw + ", userDate=" + userDate
-				+ ", userRl=" + userRl + ", gameGrade=" + gameGrade + ", gameExp=" + gameExp + ", gameMoney="
-				+ gameMoney + ", winCount=" + winCount + ", loseCount=" + loseCount + ", haveDeckList=" + haveDeckList
-				+ ", haveCardList=" + haveCardList + "]";
+				+ ", userRl=" + userRl + ", userMc=" + userMc + ", gameGrade=" + gameGrade + ", gameExp=" + gameExp
+				+ ", gameMoney=" + gameMoney + ", winCount=" + winCount + ", loseCount=" + loseCount + ", haveDeckList="
+				+ haveDeckList + ", haveCardList=" + haveCardList + "]";
 	}
 	
 }

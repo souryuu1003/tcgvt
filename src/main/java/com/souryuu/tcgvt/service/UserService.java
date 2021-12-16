@@ -1,5 +1,9 @@
 package com.souryuu.tcgvt.service;
 
-public class UserService {
+import java.util.List;
 
+import com.souryuu.tcgvt.vo.UserVO;
+
+public interface UserService {
+	List<UserVO> selectUserList() throws Exception;
 }
