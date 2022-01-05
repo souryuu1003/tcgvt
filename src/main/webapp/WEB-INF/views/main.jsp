@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+<jsp:include page="header/header.jsp"/>
 <body>
+<c:choose>
+	<c:when test="${userId}">
+		${userId}
+	</c:when>
+	<c:otherwise>
+		userId error
+	</c:otherwise>
+</c:choose>
 
 </body>
-</html>
+<jsp:include page="footer/footer.jsp"/>

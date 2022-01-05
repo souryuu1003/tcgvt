@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<META http-equiv=refresh content="1;url=main">
 <html>
 <head>
 	<title>Home</title>
