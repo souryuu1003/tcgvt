@@ -1,14 +1,58 @@
 @charset "UTF-8";
 
-header, body, footer {
-	width: 1200px;
+/* 基本表示 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: fantasy;
+}
+header, footer {
+	width: 100%;
+	float: left;
+}
+#HEADER_MENU {
+	text-align: left;
+}
+#HEADER_MENU li {
+	display: inline-block;
+}
+aside {
+	width: 12%;
+	float: left;
+}
+a:hover{
+	cursor: pointer;
+	color: gray;
+}
+
+/* 1600x900 PC*/
+#STATIC_WRAP {
+	width: 1600px;
+	margin: auto !important;
+	background-color: purple;
+}
+header, footer {
+	height: 120px;
 }
 header {
 	background-color: red;
+	padding: 12px;
 }
-body {
-	background-color: blue;
+header ul li {
+	padding: 12px;
 }
 footer {
 	background-color: green;
+}
+aside, #BODY_MAIN {
+	height: 690px;
+	float: left;
+}
+aside {
+	background-color: yellow;
+}
+#BODY_MAIN {
+	width: 88%;
+	background-color: blue;
 }
