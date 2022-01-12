@@ -35,7 +35,7 @@ public class MainController {
 	@RequestMapping(value = "/main", method = RequestMethod.GET)
 	public String main(Model model) throws Exception {
 		try {
-		    model.addAttribute("userId", "souryuu1003@gmail.com");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

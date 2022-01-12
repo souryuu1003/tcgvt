@@ -1,6 +1,6 @@
 <jsp:include page="header/header.jsp"/>
 <jsp:include page="aside/aside.jsp"/>
-		<div id="BODY_MAIN">
+		<div class="bodyWrap">
 			<c:choose>
 				<c:when test="${userId}">
 					${userId}

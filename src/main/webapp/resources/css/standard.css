@@ -11,11 +11,12 @@ header, footer {
 	width: 100%;
 	float: left;
 }
-#HEADER_MENU {
-	text-align: left;
-}
 #HEADER_MENU li {
 	display: inline-block;
+}
+#HEADER_MENU li a{
+	color: black;
+	text-decoration: none;
 }
 aside {
 	width: 12%;
@@ -45,14 +46,14 @@ header ul li {
 footer {
 	background-color: green;
 }
-aside, #BODY_MAIN {
+aside, .bodyWrap {
 	height: 690px;
 	float: left;
 }
 aside {
 	background-color: yellow;
 }
-#BODY_MAIN {
+.bodyWrap {
 	width: 88%;
 	background-color: blue;
 }
