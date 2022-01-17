@@ -12,24 +12,18 @@
 }
 header {
 	width: 100%;
+	border: 1px solid;
 	float: left;
 }
-.header-dropdown{
-  position : relative;
-  display : inline-block;
-}
-.header-dropdown-menu{
-  display : none;
-  position : absolute;
-}
-.header-dropdown-menu a{
-  display : block;
-}
-.header-dropdown:hover .header-dropdown-menu {
-  display: block;
-}
-li {
+.header_menu {
+	padding: 12px;
 	display: inline-block;
+	position: relative;
+}
+
+.header-sub-menu {
+	position: absolute;
+	display: none;
 }
 a {
 	color: black;
@@ -41,10 +35,18 @@ a:hover{
 }
 aside {
 	width: 12%;
+	border-left: 1px solid;
+	float: left;
+}
+.bodyWrap {
+	width: 88%;
+	border-left: 1px solid;
+	border-right: 1px solid;
 	float: left;
 }
 footer {
 	width: 100%;
+	border: 1px solid;
 	float: left;
 }
 
@@ -58,24 +60,8 @@ header, footer {
 	height: 120px;
 }
 header {
-	border: 1px solid;
 	padding: 12px;
-}
-header ul li {
-	padding: 12px;
-}
-footer {
-	border: 1px solid;
 }
 aside, .bodyWrap {
 	height: 660px;
-	float: left;
-}
-aside {
-	border-left: 1px solid;
-}
-.bodyWrap {
-	width: 88%;
-	border-left: 1px solid;
-	border-right: 1px solid;
 }
